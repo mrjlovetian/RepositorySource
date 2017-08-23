@@ -1,0 +1,6 @@
+framework module RepositorySource {
+  umbrella header "RepositorySource-umbrella.h"
+
+  export *
+  module * { export * }
+}

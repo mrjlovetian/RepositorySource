@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AFD5720B5A631E15CCA1A0B0 /* Pods_RepositorySource_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9D833DA23A85DDB5EC6997 /* Pods_RepositorySource_Example.framework */; };
+		C2F927D91F4D7A3E0082A5D4 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F927D81F4D7A3E0082A5D4 /* b.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +62,11 @@
 		6F80250F150EF24E5FCBB9F2 /* Pods-RepositorySource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositorySource_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepositorySource_Example/Pods-RepositorySource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9D833DA23A85DDB5EC6997 /* Pods_RepositorySource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepositorySource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CAC4D13DC8EAD8AC882FEAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7CAC4D13DC8EAD8AC882FEAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A0027764E183D59CE16D947C /* RepositorySource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RepositorySource.podspec; path = ../RepositorySource.podspec; sourceTree = "<group>"; };
-		C36BA308618C0BB32B8F8E92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A0027764E183D59CE16D947C /* RepositorySource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RepositorySource.podspec; path = ../RepositorySource.podspec; sourceTree = "<group>"; };
+		C2F927D81F4D7A3E0082A5D4 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		C36BA308618C0BB32B8F8E92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CB8AF599422B26066495036F /* Pods-RepositorySource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositorySource_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RepositorySource_Tests/Pods-RepositorySource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E10AB89D70E478F3F777637F /* Pods-RepositorySource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositorySource_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepositorySource_Tests/Pods-RepositorySource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 		6003F593195388D20070C39A /* Example for RepositorySource */ = {
 			isa = PBXGroup;
 			children = (
+				C2F927D81F4D7A3E0082A5D4 /* b.png */,
 				6003F59C195388D20070C39A /* YHJAppDelegate.h */,
 				6003F59D195388D20070C39A /* YHJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				C2F927D91F4D7A3E0082A5D4 /* b.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -354,9 +358,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RepositorySource_Example/Pods-RepositorySource_Example-resources.sh",
+				"${PODS_ROOT}/../../RepositorySource/Source/x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
