@@ -17,7 +17,7 @@
 如果你的 pod 以 framework 形式被链接，那么返回这个 framework 的 bundle。
 如果以静态库（.a）的形式被链接，那么返回 client target 的 bundle，即 mainBundle。
 但无论以哪种形式链接，在这个方法返回的 bundle 下都有你的 pod 资源。接下来要做就是去访问他们。我写了个简单的 category1来获取 MyLibrary 的 bundle 对象。
-
+[相关资源](http://blog.xianqu.org/2015/08/pod-resources/)
 
 ## 资源引用差别
 * s.resources方法
