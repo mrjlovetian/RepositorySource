@@ -21,12 +21,16 @@
 
 ## 资源引用差别
 * s.resources方法
+
 ![](/imageSource/resources_method.png)
+
 <pre><code>
 s.resources = ['RepositorySource/Source/*']
 </pre></code>
 s.resources引用是将Source下的资源拷贝到ResponsitorySource.framework目录下
+
 ![如图](/imageSource/resources.png)
+
 工程中使用时 
 <pre><code>
 @implementation NSBundle (FindBundle)
@@ -52,14 +56,18 @@ s.resources引用是将Source下的资源拷贝到ResponsitorySource.framework�
 上述代码即可获得相关图片资源
 
 * s.resource_bundles访问
+
  ![](/imageSource/resource_bundles_method.png)
+ 
 <pre><code>
 s.resource_bundles = {
    'RepositorySource' => ['RepositorySource/Source/*']
 }
 </pre></code>
 s.resource_bundles引用是将Source下的资源拷贝到ResponsitorySource.framework目录下的RepositorySource.bundle目录下
+
 ![如图](/imageSource/resource_bundles.png)
+
 工程中使用
 <pre><code>
 @implementation NSBundle (FindBundle)
