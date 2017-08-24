@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of RepositorySource.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mrjlovetian@gmail.com/RepositorySource",
+  "homepage": "https://github.com/mrjlovetian/RepositorySource",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,14 +12,16 @@
     "mrjlovetian@gmail.com": "mrjyuhongjiang@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mrjlovetian@gmail.com/RepositorySource.git",
+    "git": "https://github.com/mrjlovetian/RepositorySource.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "RepositorySource/Classes/**/*",
-  "resources": [
-    "RepositorySource/Source/*"
-  ]
+  "resource_bundles": {
+    "RepositorySource": [
+      "RepositorySource/Source/*"
+    ]
+  }
 }

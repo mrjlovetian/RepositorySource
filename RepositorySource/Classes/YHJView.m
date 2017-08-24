@@ -25,13 +25,13 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     ///s.resources访问资源
 //    imageView.image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"x" ofType:@"png"]];
-    imageView.image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle getFrameWork] pathForResource:@"aa" ofType:@"png"]];
+//    imageView.image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle getFrameWork] pathForResource:@"aa" ofType:@"png"]];
     
     
     ///s.resource_bundles访问资源
-//    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle getFrameWork] pathForResource:@"Soruce" ofType:@"bundle"]];
-//    imageView.image = [[UIImage alloc] initWithContentsOfFile:[bundle pathForResource:@"aa" ofType:@"png"]];
-//    imageView.image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle getFrameWork] pathForResource:@"x" ofType:@"png"]];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle getFrameWork] pathForResource:@"Soruce" ofType:@"bundle"]];
+    imageView.image = [[UIImage alloc] initWithContentsOfFile:[bundle pathForResource:@"aa" ofType:@"png"]];
+    imageView.image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle getFrameWork] pathForResource:@"x" ofType:@"png"]];
 
     imageView.backgroundColor = [UIColor whiteColor];
     [self addSubview:imageView];

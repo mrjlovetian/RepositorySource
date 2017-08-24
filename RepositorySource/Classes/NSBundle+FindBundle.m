@@ -18,7 +18,7 @@
 + (NSURL *)getFramerUrl
 {
     NSBundle *bundel = [NSBundle bundleForClass:[YHJView class]];
-    return [bundel URLForResource:@"Soruce" withExtension:@"bundle"];
+    return [bundel URLForResource:@"RepositorySource" withExtension:@"bundle"];
 }
 
 
